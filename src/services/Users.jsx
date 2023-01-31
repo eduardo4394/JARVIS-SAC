@@ -1,3 +1,4 @@
+//Function that fetchs data from the API
 export const getUsers = async () => {
   try {
     const res = await fetch("https://randomuser.me/api/?results=15");
