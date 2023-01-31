@@ -4,6 +4,7 @@ import TableRow from "./TableRow";
 
 const StyledTable = styled.table`
   background-color: white;
+  width: 100%;
   gap: 1rem;
   border-spacing: 0.25rem;
 `;

@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 import { getUsers } from "./services/Users";
 import Table from "./components/Table";
+import styled from "@emotion/styled";
+
+const Container = styled.div`
+  display: flex;
+  max-width: 80%;
+  margin: 0.75rem auto;
+`;
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -21,9 +28,9 @@ function App() {
   console.log(sortedUsers);
 
   return (
-    <div>
+    <Container>
       <Table data={sortedUsers} />
-    </div>
+    </Container>
   );
 }
 
